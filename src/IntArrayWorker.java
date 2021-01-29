@@ -12,36 +12,36 @@ public class IntArrayWorker {
 		matrix = theMatrix;
 	}
 
-	public int getCount(int num){
-		int count = 0;
-		for (int[] rowArray : matrix){
-			for (int item : rowArray){
+	public int getCount(int num) { 
+		int count = 0; 
+		for (int[] row : matrix) {
+			for (int item : row) {
 				if(item == num) {
-					count++;
-				}
-			}
-		}
-		return count;
-	}
+					count++; 
+				} 
+			} 
+		} 
+		return count; 
+	} 
 
-	public int getLargest(){
-		int maximum = matrix[0][0];
-		for(int row = 0; row < matrix.length; row++){
-			for (int column = 0; column < matrix[row].length; column++){
-				if (matrix[row][column] > maximum){
-					maximum = matrix[row][column];
-				}
-			}
-		}
-		return maximum;
-	}
+	public int getLargest() { 
+		int maximum = matrix[0][0]; 
+		for(int row = 0; row < matrix.length; row++) {
+			for (int column = 0; column < matrix[row].length; column++) {
+				if (matrix[row][column] > maximum) {
+					maximum = matrix[row][column]; 
+				} 
+			} 
+		} 
+		return maximum; 
+	} 
 
 	public int getColTotal(int n) { 
-		int total = 0;
-		for (int row = 0; row < matrix.length; row++){
-			total += matrix[row][n];
-		}
-		return total;
+		int total = 0; 
+		for (int row = 0; row < matrix.length; row++) {
+			total += matrix[row][n]; 
+		} 
+		return total; 
 	}
 	
 	/**
