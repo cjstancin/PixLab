@@ -64,6 +64,35 @@ public class PictureTester
     beach.negate();
     beach.explore();
   }
+
+  public static void testMirrorVerticalRightToLeft() {
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorVerticalRightToLeft();
+    caterpillar.explore();
+  }
+
+  public static void testMirrorHorizontal() {
+    Picture caterpillar = new Picture("redMotorcycle.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorHorizontal();
+    caterpillar.explore();
+  }
+
+  public static void testMirrorHorizontalBotToTop() {
+    Picture caterpillar = new Picture("redMotorcycle.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorHorizontalBotToTop();
+    caterpillar.explore();
+  }
+
+  public static void testMirrorDiagonal(){
+    Picture beach = new Picture("beach.jpg");
+    beach.mirrorDiagonal();
+    beach.explore();
+  }
+  
+
   
   
   /** Main method for testing.  Every class can have a main
@@ -74,7 +103,7 @@ public class PictureTester
     // and comment out the ones you don't want
     // to run
     //testZeroBlue();
-    testKeepZeroBlue();
+    // testKeepZeroBlue();
     //testNegate();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
@@ -83,10 +112,13 @@ public class PictureTester
     //testGrayscale();
     //testFixUnderwater();
     //testMirrorVertical();
+    // testMirrorVerticalRightToLeft();
+    // testMirrorHorizontal();
+    // testMirrorHorizontalBotToTop();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
-    //testMirrorDiagonal();
+    testMirrorDiagonal();
     //testCollage();
     //testCopy();
     //testEdgeDetection();
