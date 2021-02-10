@@ -64,6 +64,18 @@ public class PictureTester
     beach.negate();
     beach.explore();
   }
+
+  public static void testMirrorGull(){
+    Picture seagull = new Picture("seagull.jpg");
+    seagull.mirrorGull();
+    seagull.explore();
+  }
+
+  public static void testMirrorArms(){
+    Picture snowman = new Picture("snowman.jpg");
+    snowman.mirrorArms();
+    snowman.explore();
+  }
   
   
   /** Main method for testing.  Every class can have a main
@@ -74,7 +86,7 @@ public class PictureTester
     // and comment out the ones you don't want
     // to run
     //testZeroBlue();
-    testKeepZeroBlue();
+    // testKeepZeroBlue();
     //testNegate();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
@@ -83,7 +95,9 @@ public class PictureTester
     //testGrayscale();
     //testFixUnderwater();
     //testMirrorVertical();
-    //testMirrorTemple();
+    // testMirrorTemple();
+    // testMirrorGull();
+    testMirrorArms();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
