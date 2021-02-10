@@ -196,7 +196,7 @@ public class Picture extends SimplePicture {
 		}
 	}
 
-	public void mirrorHorizontalBotToTop() {
+	public void mirrorHorizontalBottomToTop() {
 		Pixel[][] pixels = this.getPixels2D();
 		Pixel topPixel = null;
 		Pixel bottomPixel = null;
