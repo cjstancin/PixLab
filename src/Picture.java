@@ -245,17 +245,19 @@ public class Picture extends SimplePicture {
 		}
 	}
 
-	public void newCollage(){
+	public void myCollage(){
 		Picture first = new Picture("cat1.jpg");
 		Picture second = new Picture("cat2.jpg");
 		this.copy(second, 0, 0);
 		this.copyPicture(first, 0, 100, 400, 500);
-		this.copyPicture(second, 200, 300 , 0, 100);
+		first.zeroBlue();
 		this.copyPicture(first, 200, 300, 400, 500);
-		first.mirrorHorizontal();
+		first.greyscale();
 		this.copyPicture(first, 100, 200 , 0, 100);
 		second.mirrorHorizontalBottomToTop();
 		this.copyPicture(second, 100, 200, 400, 500);
+		second.negate();
+		this.copyPicture(second, 200, 300 , 0, 100);
 	}
 
 

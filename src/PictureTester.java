@@ -99,9 +99,9 @@ public class PictureTester
     blank.explore();
   }
   
-  public static void testnewCollage(){
+  public static void testnewCollage() {
     Picture blank = new Picture("7inX95in.jpg");
-    blank.newCollage();
+    blank.myCollage();
     blank.explore();
   }
   
